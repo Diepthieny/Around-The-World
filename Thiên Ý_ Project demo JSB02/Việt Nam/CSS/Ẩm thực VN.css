@@ -1,0 +1,216 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.container-fluid {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text h1{
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  bottom: 26%;
+  width: 100%;
+  text-align: center;
+  font-family: Alegreya;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  padding: 75px;
+  background-color: rgb(244,249,249, 0.5);
+  text-shadow: 1px 1px 2px #01937C, 0 0 25px #28B5B5, 0 0 5px #61A6AB;
+ 
+}
+
+.textup{
+  animation: textup 13s linear infinite;
+  transform: translateY(100px);
+}
+
+@keyframes textup{
+  10%{
+      transform: translateY(0px);
+  }
+  100%{
+      transform: translateY(0px);
+  }
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0px 2px;
+  background-color: lightsteelblue;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@font-face {
+    font-family: Alegreya;
+    src: url(/Fonts/Alegreya-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(/Fonts/Oswald-VariableFont_wght.ttf);
+}
+
+.parallax{
+    background: url('/Việt Nam/Ẩm thực/IMG/banner.jpg') no-repeat center;
+    opacity: 0.7;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    bottom: 200px;
+}
+
+#parallaxword{
+    z-index: 1;
+    text-align: center;
+    font-family: Oswald;
+    color: white;
+    font-weight: 500;
+    top: 40%;
+    letter-spacing: 1px;
+    font-size: 30px;
+    position: absolute;
+    padding-left: 300px;
+    text-shadow: 1px 1px 2px #19456B, 0 0 25px #1E3D59, 0 0 5px #1F3C88;
+  border-right: 3px solid white;
+}
+
+
+ 
+
+*{
+  box-sizing: border-box;
+}
+.all{
+  width: 100%;
+  height: 100vh;
+  padding-top: 250px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.slider{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 1200px;
+  display: flex;
+}
+.slider .card{
+  border: 1px solid black;
+  width: 350px;
+  height: 400px;
+  background-color: #1e1e26;
+  box-shadow: 3px 7px 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0;
+  box-shadow: rgba(41, 120, 181, 1) 0px 25px 50px -12px;
+
+}
+
+.card:hover{
+  background-color: #17171d;
+  transform-style: preserve-3d;
+  transform: scale(1.05);
+  transition: all ease 0.3s;
+}
+
+.slider .card .img{
+  height: 100%;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+}
+.slider .card .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+.card .content .title{
+  font-family: Oswald;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 3px black, 1.5px 1.5px 2px #96e4fc, 0 2px 0 #2978b5, 0 -2px 0 #2978b5, 1px 1px #2978b5, -1px -1px 0 #2978b5, 1px -1px 0 #2978b5, -1px 1px 0 #2978b5;
+}
+
+

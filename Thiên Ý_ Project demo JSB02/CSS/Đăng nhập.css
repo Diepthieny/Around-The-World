@@ -1,0 +1,106 @@
+
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: rgb(38,57,77);
+background: linear-gradient(45deg, rgba(38,57,77,1) 0%, rgba(50,70,107,1) 11%, rgba(41,120,181,1) 51%, rgba(150,228,252,1) 96%);
+}
+
+.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 16px;
+    padding: 32px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background: #ffffff;
+}
+
+.container,
+.form__input,
+.form__button {
+    font: 500 16px 'Quicksand', sans-serif;
+     
+}
+
+.form--hidden {
+    display: none;
+}
+
+/* we have an h1 and a paragraph tag as the first and last child of form so we don't want 
+those extra margins to be visible. */
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form__title {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.form__input-group {
+    margin-bottom: 16px;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color:#2978B5;
+    background: #ffffff;
+}
+
+.form__button {
+    width: 100%;
+    padding: 16px 32px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background: #2978B5;
+}
+
+.form__button:hover {
+  background: #1768AC;
+}
+
+/* Nhấn vô nút button thì nó thu nhỏ lại */
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: #252c6a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}

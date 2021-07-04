@@ -1,0 +1,377 @@
+body{
+    background: rgb(207,27,27);
+background: linear-gradient(45deg, rgba(207,27,27,1) 12%, rgba(221,44,0,1) 28%, rgba(246,131,15,1) 88%, rgba(255,169,0,1) 100%);
+}
+    
+.background{
+        margin-top: 30px;
+}
+    
+    .blue{
+        position: relative;
+        bottom: 50px;
+        animation: fadeIn 4s;
+      -webkit-animation: fadeIn 4s;
+      -moz-animation: fadeIn 4s;
+      -o-animation: fadeIn 4s;
+      -ms-animation: fadeIn 4s;
+      margin-top: 30px;
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    
+    .text1,.text2{
+        animation: textup 13s linear infinite;
+        transform: translateY(100px);
+    }
+    
+    @keyframes textup{
+        10%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    
+    .text1{
+        position: absolute;
+        top: 400px;
+        left: 140px;
+        font-size: 70px;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px #01937C, 0 0 25px #28B5B5, 0 0 5px #61A6AB;
+        color: white;
+    }
+    
+    
+    .text2{
+        top: 510px;
+        left: 150px;
+        position: absolute;
+        font-size: 23px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 3px #34656D, 0 0 5px #96BB7C;
+        color: white;
+    }
+    
+    
+    .europe{
+        margin-top: 0px;
+        margin-bottom: 40px;
+        margin-left: 30px;
+    }
+    
+    .black{
+        width: 100%;
+        margin-left: 40px;
+        padding-bottom: 0;
+    }
+    
+    .white{
+        text-shadow:
+       3px 4px 0 #FF7F66,
+     -1px -1px 0 #FF7F66,  
+      1px -1px 0 #FF7F66,
+      -1px 1px 0 #FF7F66,
+       1px 1px 0 #FF7F66;
+        color: #fff;
+        font-family: Lobster;
+        font-size: 30px;
+        text-align: center; 
+        font-weight: 900;
+    }
+    
+    .flag img{
+        width: 300px;
+        height: 200px;
+        margin-top: 30px;
+        border: 2px solid black;
+    }
+    
+    .countries{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .flag{    
+        display: inline-block;
+        margin-left: 60px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .flag h3{
+    
+        text-align: center;
+        padding: 10px;
+        color: #000;
+        background-color: #D4EDF4;
+        margin-top: 1px;
+        border: 3px solid #1E3D59;
+        border-radius: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    @font-face {
+        font-family: Lobster;
+        src: url(/Fonts/Lobster-Regular.ttf);
+    }
+    
+    @keyframes bob-on-hover {
+        0% {
+          transform: translateY(-8px);
+        }
+        50% {
+          transform: translateY(-4px);
+        }
+        100% {
+          transform: translateY(-8px);
+        }
+      }
+      
+      @keyframes bob-on-hover-float {
+        100% {
+          transform: translateY(-8px);
+        }
+      }
+      
+    .flag:hover img{
+        animation-name: bob-on-hover-float, bob-on-hover;
+        animation-duration: .3s, 1.5s;
+        animation-delay: 0s, .3s;
+        animation-timing-function: ease-out, ease-in-out;
+        animation-iteration-count: 1, infinite;
+        animation-fill-mode: forwards;
+        animation-direction: normal, alternate;
+    }
+  
+    
+    .flag h3 {
+        vertical-align: middle;
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      transition-property: color;
+      transition-duration: 0.5s;
+    }
+    
+    .flag:before h3{
+        content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #2098D1;
+      transform: scaleY(0);
+      transform-origin: 50% 0;
+      transition-property: transform;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-out;
+    }
+    
+    .flag h3:hover, .flag h3:focus, .flag h3:active {
+        color: white;
+        background: #2098D1;
+    }
+    
+    .flag h3:hover:before, .flag h3:focus:before, .flag h3:active:before {
+        transform: scaleY(1);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+
+
+
+.background{
+    margin-top: 30px;
+}
+
+.blue{
+    position: relative;
+    bottom: 50px;
+    animation: fadeIn 4s;
+  -webkit-animation: fadeIn 4s;
+  -moz-animation: fadeIn 4s;
+  -o-animation: fadeIn 4s;
+  -ms-animation: fadeIn 4s;
+  margin-top: 30px;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.text1,.text2{
+    animation: textup 13s linear infinite;
+    transform: translateY(100px);
+}
+
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.text1{
+    position: absolute;
+    top: 400px;
+    left: 140px;
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px #01937C, 0 0 25px #28B5B5, 0 0 5px #61A6AB;
+    color: white;
+}
+
+
+.text2{
+    top: 510px;
+    left: 150px;
+    position: absolute;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px #34656D, 0 0 5px #96BB7C;
+    color: white;
+}
+
+
+.africa{
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.black{
+    width: 100%;
+
+    padding-bottom: 0;
+}
+
+.white{
+    padding-right: 80px;
+    text-shadow:
+    4px 4px 0 #F94144,
+  -1px -1px 0 #F94144,  
+   1px -1px 0 #F94144,
+   -1px 1px 0 #F94144,
+    1px 1px 0 #F94144;
+    color: #fff;
+    font-family: Lobster;
+    font-size: 50px;
+    text-align: center; 
+    font-weight: 900;
+}
+
+.flag img{
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    border: 2px solid black;
+}
+
+.countries{
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.flag{    
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.flag h3{
+
+    text-align: center;
+    padding: 10px;
+    color: #000;
+    background-color: #D4EDF4;
+    margin-top: 1px;
+    border: 3px solid #1E3D59;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url(/Fonts/Lobster-Regular.ttf);
+}
+
+@keyframes bob-on-hover {
+    0% {
+      transform: translateY(-8px);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+    100% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  @keyframes bob-on-hover-float {
+    100% {
+      transform: translateY(-8px);
+    }
+  }
+  
+.flag:hover img{
+    animation-name: bob-on-hover-float, bob-on-hover;
+    animation-duration: .3s, 1.5s;
+    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal, alternate;
+}
+
+
+.flag h3 {
+    vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.flag:before h3{
+    content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.flag h3:hover, .flag h3:focus, .flag h3:active {
+    color: white;
+    background: #2098D1;
+}
+
+.flag h3:hover:before, .flag h3:focus:before, .flag h3:active:before {
+    transform: scaleY(1);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
